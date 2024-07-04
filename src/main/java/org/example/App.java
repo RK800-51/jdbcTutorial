@@ -1,13 +1,14 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
+
+import org.example.businesslogic.Util;
+
+import java.sql.SQLException;
+
+public class App
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ) throws SQLException {
+        Util util = new Util();
+        util.getConnection();
     }
 }
