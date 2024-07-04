@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Util {
-    private static final String DB_DRIVER = "org.h2.Driver";
-    private static final String DB_URL = "jdbc:h2:~/test";
-    private static final String DB_USERNAME = "sa";
-    private static final String DB_PASSWORD = "sa";
+    private static final String DB_DRIVER = "org.postgresql.Driver";
+    private static final String DB_URL = "jdbc:postgresql://localhost:5432/hib_tutorial";
+    private static final String DB_USERNAME = "postgres";
+    private static final String DB_PASSWORD = "postgres";
 
     public Connection getConnection() throws SQLException {
         Connection connection = null;
